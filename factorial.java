@@ -1,17 +1,17 @@
-class Test
+import java.util.*;
+class Main
 {
- // method to find factorial of given number
- static int factorial(int n)
- {
-  if (n == 0)
-  return 1;
-   
-  return n*factorial(n-1);
- }
-  
- public static void main(String[] args)
- {
-  int num = 5;
-  System.out.println("Factorial of "+ num + " is " + factorial(5));
- }
+     public static void main(String []args)
+     {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number: ");
+        int num=sc.nextInt();
+        int i=1,fact=1;
+        while(i<=num)
+        {
+            fact=fact*i;
+            i++;
+        }
+        System.out.println("Factorial of the number: "+fact);  
+     }   
 }
